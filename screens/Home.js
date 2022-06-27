@@ -50,7 +50,7 @@ export default function Lista({ navigation }) {
             backgroundColor: 'lavender',
           }}
           onPress={() => {
-            navigation.navigate('Detalhe', {
+            navigation.navigate('UpdateDelete', {
               id: item.id,
               local: item.local,
               data: item.data,
@@ -58,13 +58,10 @@ export default function Lista({ navigation }) {
             });
           }}>
           <Text style={{ flex: 1 }}>{item.local}</Text>
-          <Text style={{ flex: 2 }}>{item.horario}</Text>
-          <Text style={{ flex: 3 }}>{item.data}</Text>
-          <Image
-            style={{ flex: 4, height: 30, width: 30 }}
-            resizeMode="contain"
-            source={item.imagem}
-          />
+          <Text style={{ flex: 2 }}>{item.data}</Text>
+          <Text style={{ flex: 3}}>{item.horario}</Text>
+        
+          
         </Pressable>
       </View>
     );
@@ -97,7 +94,7 @@ export default function Lista({ navigation }) {
               fontSize: 26,
               textAlign: 'center',
             }}>
-            Caronas
+            Caronas Agendadas
           </Text>
         </View>
         <FlatList data={caronas} renderItem={Caronas} />
@@ -115,7 +112,7 @@ export default function Lista({ navigation }) {
             alignItems: 'center',
           }}
           onPress={() => {
-            navigation.navigate('Novo');
+            navigation.navigate('NovaCarona');
           }}>
           <Text style={{ color: 'white', fontSize: 24 }}>+</Text>
         </Pressable>

@@ -15,10 +15,13 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 16,
     justifyContent: 'center',
+    backgroundColor: 'darkblue',
   },
   title: {
     textAlign: 'center',
-    fontSize: 26,
     marginBottom: 24,
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: 'white',
   },
 });

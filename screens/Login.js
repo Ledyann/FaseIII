@@ -40,11 +40,6 @@ export default function LoginScreen({ navigation }) {
         secureTextEntry={true}
       />
       <View style={styles.espacamento}>
-        <Text
-          style={styles.senha}
-          onPress={() => navigation.navigate('novasenha')}>
-          Esqueceu a Senha?
-        </Text>
 
         <View style={styles.espacamento}>
           <Button
@@ -80,7 +75,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     backgroundColor: 'darkblue',
-    paddingHorizontal: 14,
+    paddingHorizontal: 16,
   },
   logo: {
     color: 'white',
@@ -101,15 +96,8 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: 'lightgray',
   },
-  senha: {
-    paddingTop: 15,
-    paddingBottom: 15,
-    fontSize: 14,
-    color: 'white',
-    textAlign: 'right',
-  },
   espacamento: {
-    paddingTop: 15,
-    paddingBottom: 15,
+    paddingTop: 20,
+    paddingBottom: 20,
   },
 });

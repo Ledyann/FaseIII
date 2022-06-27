@@ -6,8 +6,8 @@ import { UsuarioContext } from '../contexts/UsuarioContext';
 import LoginScreen from '../screens/Login';
 import RegisterScreen from '../screens/Register';
 import HomeScreen from '../screens/Home';
-import NovoScreen from '../screens/Novo';
-import DetalheScreen from '../screens/Detalhe';
+import NovaCaronaScreen from '../screens/NovaCarona';
+import UpdateDeleteScreen from '../screens/UpdateDelete';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,8 +23,8 @@ export default function MainNavigator() {
       ) : (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="Novo" component={NovoScreen} />
-          <Stack.Screen name="Detalhe" component={DetalheScreen} />
+          <Stack.Screen name="NovaCarona" component={NovaCaronaScreen} />
+          <Stack.Screen name="UpdateDelete" component={UpdateDeleteScreen} />
         </Stack.Navigator>
       )}
     </>
