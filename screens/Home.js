@@ -1,4 +1,4 @@
-/* */
+
 import * as firebase from 'firebase';
 import React, { useContext, useState, useEffect } from 'react';
 import { UsuarioContext } from '../contexts/UsuarioContext';
